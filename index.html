@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/5dd8230365.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">More Info</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+
+            <div class="header-text">
+                <p>Hello, it's Me</p>
+                <h2>Prashanth kumar</h2>
+                <h3>And I'm a <span class="multineText"></span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------about------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile_pic.jpg" alt="profile_pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p id="bio">" I'm a proactive professional with a robust foundation in computer science,
+                        supplemented by valuable insights gained through 7 months of work experience in software
+                        engineering.
+                        Eager to apply both my technical skills and academic knowledge in a professional setting that
+                        encourages innovation and
+                        continuous learning. Excited about contributing to a dynamic team and environment that fosters
+                        personal and
+                        professional development."</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('career')">Career objective</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <h3><span id="role">Flutter & Frontend Developer</span></h3>
+                        <h3>@<span class="company"><a href="https://www.nowfloats.com/"
+                                    target="_blank">Nowfloats</a></span> [ May-2023 to Dec-2023 ]</h3>
+                        <br>
+                        <h3 id="experience">7 months of professional experience, specializing in cross-
+                            platform mobile & web app development. Proven expertise in crafting seamless
+                            user experiences and collaborating effectively for project success.</h3>
+                        <br>
+                        <div class="symbol">
+                            <ul>
+                                <li>Resolved customer product issues, demonstrating strong problem-solving skills.</li>
+                                <li>Implemented new features for the existing product, enhancing the overall customer
+                                    experience.</li>
+                                <li>Gained extensive hands-on experience and developed enthusiasm for continuous
+                                    learning.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="career">
+                        <h3 id="objective">To be associated with a dynamic and progressive organization that will allow
+                            me to utilize my abilities and
+                            qualifications in the field to add value to the organization while providing me with
+                            opportunities for growth.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------- Education -------------- -->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">My Education</h1>
+            <div class="education-list">
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Graduation</h2>
+                    <h3>Chaitanya Bharathi Institute of Technology [CBIT]</h3>
+                    <P>2019 - 2023</P>
+                    <h3>CGPA - 8.32</h3>
+                    <a href="https://www.cbit.ac.in/" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h2>Intermediate (12<sup>th</sup>)</h2>
+                    <h3>Sri Gayatri Junior College</h3>
+                    <p>2017 - 2019</p>
+                    <h3>Percentage - 95.9%</h3>
+                    <a href="https://g.co/kgs/MT2vKnF" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Matriculation (10<sup>th</sup>)</h2>
+                    <h3>Globus International School</h3>
+                    <p>2016-2017</p>
+                    <h3>GPA - 9.5</h3>
+                    <a href="https://nicelocal.in/suryapet/kids/globus_international_school_kodad/"
+                        target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  --------------- Skills ------------  -->
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="sub-title"><span>Technical Skills</span></h2>
+            <div class="Tech">
+
+                <div class="Programming">
+                    <h3>Programming Languages</h3>
+                    <div class="Tech-Skills">
+                        <i class="fa-brands fa-python"></i>
+                        <h4>Python</h4>
+                    </div>
+                    <div class="Tech-Skills">
+                        <i class="fa-solid fa-c"></i>
+                        <h4>C</h4>
+                    </div>
+                    <div class="Tech-Skills">
+                        <i class="fa-brands fa-java"></i>
+                        <h4>Java</h4>
+                    </div>
+                    <div class="Tech-Skills">
+                        <img class="skill-img" src="images\dart_icon.png" alt="">
+                        <h4>Dart</h4>
+                    </div>
+                </div>
+
+                <div class="Programming">
+                    <h3>Web Technologies</h3>
+                    <div class="webdev">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="webdev">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="webdev">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h4>Java Script</h4>
+                    </div>
+
+                </div>
+
+                <div class="Programming">
+                    <h3>Backend Services</h3>
+
+                    <div class="backend">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>SQL</h4>
+                    </div>
+                    <div class="backend">
+                        <img src="images\mongodb_icon.svg" class="skill-img" alt="">
+                        <h4>MongoDB</h4>
+                    </div>
+                    <div class="backend">
+                        <i class="fa-brands fa-aws"></i>
+                        <h4>AWS</h4>
+                    </div>
+
+                </div>
+
+                <div class="Programming">
+                    <h3>Frameworks</h3>
+
+                    <div class="framework">
+                        <i class="fa-brands fa-react"></i>
+                        <h4>React</h4>
+                    </div>
+                    <div class="framework">
+                        <img src="images\flutter_icon.png" class="skill-img" alt="">
+                        <h4>Flutter</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  ------------- Projects -----------  -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images\zadinga_web.png" alt="zadinga Web App">
+                    <div class="layer">
+                        <h3>Zadinga Web App</h3>
+                        <p>Zadinga is the best shop management app for retailers. Automate inventory management, open an
+                            online shop,
+                            offer hyperlocal delivery and do much more
+                        </p>
+                        <a href="https://web.zadinga.biz/#/onboarding" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\zadinga_mobile.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Zadinga comes with a number of useful features and is fully equipped to handle all aspects of
+                            retail operations and
+                            simplify the life of retailers.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.nowfloats.zadinga&hl=en&gl=US"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\Portfolio.jfif" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talanted people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <!-- --------------- Certifications ----------------- -->
+
+
+    <!-- --------- Contact -------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>madhasuprashanth15@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 7989188700</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/prashanthkumarmadhasu" target="_blank"><i
+                                class="fa-brands fa-telegram"></i></a>
+                        <a href="https://twitter.com/Prashanth1729M" target="_blank"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/_prashanth_kumar_15/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prashanth-kumar-madhasu-69b5471a7/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images\prashanthkumar_madhasu.pdf" download class="btn btn2">Download Resume <i
+                            class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Prashanth Kumar. made with <span>&hearts;</span></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwlR-J9diHmNuC5Ji6ZJk8QWKmILG9KXxz-4fVEd15FFqEycpOFf2Cs2_WHPioXFiBhBQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="action.js"></script>
+</body>
+
+</html>

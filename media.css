@@ -1,0 +1,175 @@
+/* ---------------------{ CSS MEDIA QUERIES }-------------------- */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    
+    #header{
+        background-image: url("images/background_2.jpg");
+        background-size: cover;
+    }
+    .header-text{
+        margin-top: 100%;
+    }
+    .header-text p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .header-text h2{
+        font-size: 22px;
+    }
+    .header-text h3{
+        font-size: 19px;
+        margin-top: 4px;
+    }
+    .header-text h3 span{
+        font-size: 24px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .container{
+        padding: 20px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #about{
+        padding: 20px 0;
+    }
+    #role{
+        color: #f70753;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .about-col-1{
+        transform: scale(0.8);
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-2 p{
+        font-size: 15px;
+    }
+    .tab-titles p{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .tab-links{
+        margin-right: 20px;
+    }
+    .tab-contents h3{
+        font-size: 15px;
+    }
+    .tab-contents ul li{
+        font-size: 18px;
+    }
+    
+    .company{
+        font-size: 18px;
+    }
+    .symbol{
+        padding-left: 20px;
+    }
+
+
+    #education{
+        padding: 20px 0;
+    }
+    .education-list{
+        margin-top: 25px;
+    }
+    .education-list div i{
+        font-size: 35px;
+    }
+    .education-list div h2{
+        font-size: 25px;
+    }
+    .education-list div a{
+        font-size: 16px;
+    }
+
+
+    .Programming h3{
+        font-size: 24px;
+    }
+    .Programming h4{
+        font-size: 22px;
+    }
+    .skills i{
+        font-size: 30px;
+        width: 3rem;
+        height: 3rem;
+    }
+    .skills .skill-img{
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+    }
+    .Tech{
+        gap: 2rem;
+    }
+    .Programming .Technical-Skills, .backend, .webdev, .framework{
+        padding: 0.5em 0.5em 0.5em;
+    }
+
+
+    #projects{
+        padding:0;
+    }
+    .work-list{
+        margin-top: 20px;
+        grid-gap: 30px;
+    }
+     
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+@media only screen and (max-width:1020px){
+    nav ul li{
+        padding-right:30px ;
+    }
+
+}
+
+@media only screen and (max-width:900px){
+    nav{
+        padding: 4px 10px;
+    }
+}
